@@ -18,17 +18,17 @@ function escolherEtiologia(valor) {
   opcoes.innerHTML = '';
 
   if (tipo === 'unilateral' && etiologia === 'mucosa') {
-    opcoes.innerHTML = `<button onclick="mostrarResposta('Paciente apresentando estase de secreção espessada + presença de pólipo grande em rinoscopia + anosmia.\n\nConduta: Solicitar TC e encaminhar ao especialista para avaliação de pólipo nasal.')">Estase + pólipo + anosmia</button>
-                        <button onclick="mostrarResposta('Outro quadro clínico de obstrução nasal unilateral de etiologia mucosa.\n\nConduta: Solicitar TC e encaminhar ao especialista para avaliação de pólipo nasal.')">Outro</button>`;
+    opcoes.innerHTML = `<button onclick="mostrarResposta('Paciente apresentando estase de secreção espessada + presença de pólipo grande em rinoscopia + anosmia.<br><br>Conduta: Solicitar TC e encaminhar ao especialista para avaliação de pólipo nasal.')">Estase + pólipo + anosmia</button>
+                        <button onclick="mostrarResposta('Outro quadro clínico de obstrução nasal unilateral de etiologia mucosa.<br><br>Conduta: Solicitar TC e encaminhar ao especialista para avaliação de pólipo nasal.')">Outro</button>`;
   } else if (tipo === 'unilateral' && etiologia === 'estrutural') {
-    opcoes.innerHTML = `<button onclick="mostrarResposta('Paciente com rinorreia fétida e histórico de corpo estranho com achado em rinoscopia.\n\nConduta: Remoção do corpo estranho.')">Rinorreia fétida + corpo estranho</button>
-                        <button onclick="mostrarResposta('Suspeita de desvio de septo por malformação, intercorrência no parto ou trauma.\n\nConduta: Avaliar desvio de septo com especialista.')">Desvio de septo</button>
-                        <button onclick="mostrarResposta('Paciente do sexo masculino, com quadro clínico de epistaxes volumosas + drenagem nasal + podendo apresentar quadro de otite média serosa com diminuição na audição.\n\nConduta: Solicitar TC e avaliar a suspeita de Angiofibroma Nasal Juvenil.')">Adolescente + epistaxe volumosa</button>`;
+    opcoes.innerHTML = `<button onclick="mostrarResposta('Paciente com rinorreia fétida e histórico de corpo estranho com achado em rinoscopia.<br><br>Conduta: Remoção do corpo estranho.')">Rinorreia fétida + corpo estranho</button>
+                        <button onclick="mostrarResposta('Suspeita de desvio de septo por malformação, intercorrência no parto ou trauma.<br><br>Conduta: Avaliar desvio de septo com especialista.')">Desvio de septo</button>
+                        <button onclick="mostrarResposta('Paciente do sexo masculino, com quadro clínico de epistaxes volumosas, drenagem nasal e podendo apresentar quadro de otite média serosa com diminuição na audição.<br><br>Conduta: Solicitar TC para avaliar suspeita de Angiofibroma Nasal Juvenil.')">Adolescente sexo masculino + epistaxe + drenagem nasal</button>`;
   } else if (tipo === 'bilateral' && etiologia === 'mucosa') {
-    opcoes.innerHTML = `<button onclick="mostrarResposta('Paciente com coriza hialina, prurido nasal e ocular e crises esternutatórias.\n\nConduta: Diagnóstico clínico de Rinite alérgica.\n\nTratamento: higiene ambiental, lavagem nasal com solução salina, anti-histamínico de 2ª geração (loratadina) e corticoesteroide tópico nasal (budesonida).')">Coriza + prurido + espirros</button>
+    opcoes.innerHTML = `<button onclick="mostrarResposta('Paciente com coriza hialina, prurido nasal e ocular e crises esternutatórias.<br><br>Conduta: Diagnóstico clínico de Rinite alérgica.<br><br>Tratamento: higiene ambiental, lavagem nasal com solução salina, anti-histamínico de 2ª geração (loratadina) e corticoesteroide tópico nasal (budesonida).')">Coriza + prurido + espirros</button>
                         <button onclick="mostrarResposta(tabelaSinusite())">Febre + tosse + cefaleia</button>`;
   } else if (tipo === 'bilateral' && etiologia === 'estrutural') {
-    opcoes.innerHTML = `<button onclick="mostrarResposta('Paciente com respiração bucal, boca seca, secreção nasal mucopurulenta, ronco e distúrbio do sono.\n\nConduta: Avaliar por oroscopia a suspeita de hiperplasia adenoideana e considerar indicação cirúrgica.')">Respiração bucal + ronco + secreção</button>`;
+    opcoes.innerHTML = `<button onclick="mostrarResposta('Paciente com respiração bucal, boca seca, secreção nasal mucopurulenta, ronco e distúrbio do sono.<br><br>Conduta: Avaliar por oroscopia a suspeita de hiperplasia adenoideana e considerar indicação cirúrgica.')">Respiração bucal + ronco + secreção</button>`;
   }
 }
 
